@@ -11,7 +11,14 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <style>
+  .social-container a {
+    text-decoration: none;
+  }
 
+  .social-icons {
+    width: 50px;
+    padding: 10px;
+  }
   </style>
 
   <title>Titãs - Início</title>
@@ -20,7 +27,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Titãs</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
       aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -30,10 +37,10 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+          <a class="nav-link" href="#">Início<span class="sr-only">(página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">História</a>
+          <a class="nav-link" href="#conheca">História</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -41,20 +48,27 @@
             Integrantes
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Sérgio Britto</a>
-            <a class="dropdown-item" href="#">Branco Mello</a>
-            <a class="dropdown-item" href="#">Tony Bellotto</a>
+            <a class="dropdown-item" href="#britto">Sérgio Britto</a>
+            <a class="dropdown-item" href="#mello">Branco Mello</a>
+            <a class="dropdown-item" href="#bellotto">Tony Bellotto</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Ex integrantes</a>
+            <a class="dropdown-item" href="#miklos">Paulo Miklos</a>
+            <a class="dropdown-item" href="#gavin">Charles Gavin</a>
+            <a class="dropdown-item" href="#fromer">Marcelo Fromer</a>
+            <a class="dropdown-item" href="#reis">Nando Reis</a>
+            <a class="dropdown-item" href="#antunes">Arnaldo Antunes</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Álbuns</a>
+          <a class="nav-link" href="#ouca">Ouça</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#contato">Contato</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
     </div>
   </nav>
@@ -68,13 +82,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/img/titascarousel1.jpg" alt="Primeiro Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
+        <img class="d-block w-100" src="assets/img/carousel/titascarousel1.jpg" alt="Primeiro Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/titascarousel2.jpg" alt="Segundo Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
+        <img class="d-block w-100" src="assets/img/carousel/titascarousel2.jpg" alt="Segundo Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/titascarousel3.jpg" alt="Terceiro Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
+        <img class="d-block w-100" src="assets/img/carousel/titascarousel3.jpg" alt="Terceiro Slide - Imagem da banda Titãs em sua formação clássica nos anos 80">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -90,85 +104,93 @@
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Conheça Titãs</h1>
+      <h1 class="display-4" id="conheca">Conheça Titãs</h1>
       <p class="lead">Conheça aqui um pouco sobre a história de uma das mais clássicas bandas de rock brasileiras.</p>
+        <p>Titãs é uma banda de rock formada na cidade de São Paulo, Brasil em 1982. Embora originalmente tocassem pop-rock alternativo em seus primórdios, o grupo também já utilizou diversos outros gêneros ao longo de quase 40 anos de carreira, como new wave, punk rock, grunge, MPB e música eletrônica.</p>
+        <p>A formação inicial contava com um número de integrantes bastante incomum. Eram nove membros, sendo que seis eram vocalistas. Arnaldo Antunes, Branco Mello e Ciro Pessoa cantavam e faziam vocais de apoio. Sérgio Britto, Nando Reis e Paulo Miklos, além de cantarem, se revezavam entre os teclados e o baixo. O restante do grupo era formado por André Jung, na bateria, Marcelo Fromer na guitarra rítmica e Tony Bellotto na guitarra solo. Ciro Pessoa rapidamente deixou o grupo, antes mesmo do lançamento do primeiro álbum da banda, em 1984. André Jung era o baterista inicial, mas foi substituído por Charles Gavin no início de 1985, estabelecendo a formação clássica da banda.</p>
+        <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Tit%C3%A3s_(banda)" target="_blank">Wikipedia</a></p>
     </div>
   </div>
 
   <!-- Container -->
   <div class="container">
 
+    <h2 class="display-4 text-center" id="integrantes">Formação clássica</h2>
+
     <!-- Card columns -->
-    <div class="card-columns">
+    <div class="card-columns mt-5">
+
       <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <img class="card-img-top" src="assets/img/perfis/perfilbritto.jpg" alt="Foto de Sérgio Britto" id="britto">
         <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+          <h5 class="card-title">Sérgio Britto</h5>
+          <p class="card-text">Vocalista e tecladista.</p>
         </div>
       </div>
-      <div class="card p-3">
-        <blockquote class="blockquote mb-0 card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
+
       <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <img class="card-img-top" src="assets/img/perfis/perfilmello.jpg" alt="Foto de Branco Mello" id="mello">
         <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          <h5 class="card-title">Branco Mello</h5>
+          <p class="card-text">Vocalista.</p>
         </div>
       </div>
-      <div class="card bg-dark text-white text-center p-3">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-          <footer class="blockquote-footer">
-            <small>
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card text-center">
+
+      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilbellotto.jpg" alt="Foto de Tony Bellotto" id="bellotto">
         <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          <h5 class="card-title">Tony Bellotto</h5>
+          <p class="card-text">Guitarrista.</p>
         </div>
       </div>
+
       <div class="card">
-        <img class="card-img" src=".../100px260/" alt="Imagem do card">
-      </div>
-      <div class="card p-3 text-right">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilmiklos.jpg" alt="Foto de Paulo Miklos" id="miklos">
         <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          <h5 class="card-title">Paulo Miklos</h5>
+          <p class="card-text">Vocalista e tecladista/baixista.</p>
         </div>
       </div>
+
+      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilgavin.jpg" alt="Foto de Charles Gavin" id="gavin">
+        <div class="card-body">
+          <h5 class="card-title">Charles Gavin</h5>
+          <p class="card-text">Baterista.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilfromer.jpg" alt="Foto de Marcelo Fromer" id="fromer">
+        <div class="card-body">
+          <h5 class="card-title">Marcelo Fromer</h5>
+          <p class="card-text">Guitarrista.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilreis.jpg" alt="Foto de Nando Reis" id="reis">
+        <div class="card-body">
+          <h5 class="card-title">Nando Reis</h5>
+          <p class="card-text">Vocalista e baixista.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="assets/img/perfis/perfilantunes.jpg" alt="Foto de Arnaldo Antunes" id="antunes">
+        <div class="card-body">
+          <h5 class="card-title">Arnaldo Antunes</h5>
+          <p class="card-text">Vocalista.</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="row mt-5 mb-5">
       <div class="col-md-6">
-        <h3>Videoclipe clássico</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vitae. Eligendi, voluptatum ad natus quibusdam a illo sit. Aut vero ex assumenda tenetur delectus asperiores rem totam veritatis officiis fugit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officiis fugit fugiat itaque odit, laborum nam fuga ab aperiam necessitatibus, quia, inventore laudantium illo officia quae consequuntur! Optio, sapiente delectus?</p>
+        <h3 id="ouca">Videoclipe clássico</h3>
+        <p>Cabeça Dinossauro é o terceiro álbum de estúdio da banda brasileira de rock Titãs, lançado em 1 de junho de 1986. Não só marcou a estreia da parceria da banda com o produtor Liminha, que na época era diretor da WEA, o que facilitou a aproximação de ambas as partes; como também garantiu o primeiro disco de ouro deles, em dezembro do mesmo ano.</p>
+        <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Cabe%C3%A7a_Dinossauro" target="_blank">Wikipedia</a></p>
       </div>
       <div class="col-md-6">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bswa1uyQe8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -176,38 +198,47 @@
     </div>
 
     <!-- Form -->
-    <form>
+
+    <h2 class="display-4 text-center" id="contato">Entre em contato</h2>
+
+    <form class="mb-5">
+
       <div class="form-group">
-        <label for="exampleFormControlInput1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" onkeyup="validaNome()" placeholder="Maria Silva">
       </div>
+      <div id="txtNome"></div><br>
+
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Select de exemplo</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" id="email" onkeyup="validaEmail()" placeholder="nome@exemplo.com">
       </div>
+      <div id="txtEmail"></div><br>
+
       <div class="form-group">
-        <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="form-control" id="mensagem" rows="3" onkeyup="validaMensagem()"></textarea>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+      <div id="txtMensagem"></div><br>
+
+      <button class="btn btn-outline-dark" onclick="enviaFormulario()">Enviar</button>
+
     </form>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center">
+    <div class="social-container">
+    <a href="https://github.com/nclfrnnds" target="_blank">
+      <img class="social-icons" src="assets/img/icons/github.svg" alt="Ícone da rede social GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/nicolifernandes" target="_blank">
+      <img class="social-icons" src="assets/img/icons/linkedin.svg" alt="Ícone da rede social LinkedIn">
+    </a>
+    </div>
+    <p class="text-light m-auto">Todos os direitos reservados &copy; - 2021</p>
+  </footer>
 
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -220,6 +251,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
   </script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
